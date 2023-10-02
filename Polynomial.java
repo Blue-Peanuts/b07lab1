@@ -45,6 +45,8 @@ public class Polynomial {
             }
             for (int i = 0; i < splitFull.length; i++) {
                 for (int j = 0; j < splitFull[i].length; j++) {
+                    if(splitFull[i][j].length() == 0)
+                        continue;
                     boolean hasX = splitFull[i][j].contains("x");
 
                     String[] splitFrag = splitFull[i][j].split("x");
