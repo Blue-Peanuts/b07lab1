@@ -157,6 +157,8 @@ public class Polynomial {
     public void saveToFile(String fileName) {
         String data = "";
         for (int i = 0; i < coefficients.length; i++) {
+            if(coefficients[i] >= 0)
+                data += "+";
             data += coefficients[i];
             if (exponents[i] == 0) {
 
